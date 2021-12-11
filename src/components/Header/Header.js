@@ -1,65 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import classes from "./Header.module.css";
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const [showCloseButton, setShowCloseButton] = useState(false);
+
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#222b38", padding: "1rem" }}
+      <Navbar
+        expand="lg"
+        className={showCloseButton ? classes.navBar2 : classes.navBar1}
       >
-        <div className="container-fluid">
-          <a className="navbar-brand mx-3 text-white" href="#">
-            <img src="logo.png" className="img-responsive" />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-white h6 m-3"
-                  aria-current="page"
-                  href="#"
-                >
-                  Webdesign
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white h6 m-3" href="#">
-                  Zoekmachine optimalisatie(SEO)
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white h6 m-3" href="#">
-                  Google Ads
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white h6 m-3" href="#">
-                  Conversie optimalisatie(CRO)
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white h6 m-3" href="#">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <Navbar.Brand href="#home" className="mx-3">
+          <img src="logo.png" className="img-responsive" />
+        </Navbar.Brand>
+
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          style={{ border: "none", marginRight: "1rem" }}
+          onClick={() => setShowCloseButton(!showCloseButton)}
+        >
+          {showCloseButton ? (
+            <FaTimes color="#00fa96" style={{ fontSize: "1.5rem" }} />
+          ) : (
+            <GiHamburgerMenu color="#00fa96" style={{ fontSize: "1.7rem" }} />
+          )}
+        </Navbar.Toggle>
+
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link
+              href="#home"
+              className={showCloseButton ? classes.list2 : classes.list1}
+            >
+              Webdesign
+            </Nav.Link>
+            <Nav.Link
+              href="#features"
+              className={showCloseButton ? classes.list2 : classes.list1}
+            >
+              Zoekmachine optimalisatie(SEO)
+            </Nav.Link>
+            <Nav.Link
+              href="#pricing"
+              className={showCloseButton ? classes.list2 : classes.list1}
+            >
+              Google Ads
+            </Nav.Link>
+            <Nav.Link
+              href="#pricing"
+              className={showCloseButton ? classes.list2 : classes.list1}
+            >
+              Conversie optimalisatie(CRO)
+            </Nav.Link>
+            <Nav.Link
+              href="#pricing"
+              className={showCloseButton ? classes.list2 : classes.list1}
+            >
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   );
 };

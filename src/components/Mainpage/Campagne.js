@@ -1,15 +1,32 @@
 import React from "react";
 import Button from "../Button/Button";
+import styled from "styled-components";
 const Campagne = () => {
+  const H1 = styled.h1`
+    margin-top: 8rem;
+    margin-left: 3rem;
+    @media (max-width: 768px) {
+      margin-top: 4rem;
+    }
+  `;
+  const IMG = styled.img`
+    margin-top: 12rem;
+    @media (max-width: 768px) {
+      margin-top: 3rem;
+    }
+  `;
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ overflowX: "hidden" }}>
         <div className="row">
-          <div className="col-xl-6">
-            <h1 style={{ marginTop: "8rem", marginLeft: "3rem" }}>
+          <div
+            className="col-xl-6 col-lg-6 col-md-12 col-sm-12"
+            style={{ marginBottom: "4rem" }}
+          >
+            <H1>
               De ultieme campagne
               <br /> blauwdruk
-            </h1>
+            </H1>
             <p
               style={{
                 marginTop: "2rem",
@@ -45,12 +62,14 @@ const Campagne = () => {
               </Button>
             </div>
           </div>
-          <div className="col-xl-6">
-            <img
+          <div
+            className="col-xl-6 col-lg-6 col-md-12 col-sm-12"
+            style={{ marginBottom: "4rem" }}
+          >
+            <IMG
               src="Placeholder.png"
               className="img-responsive w-100"
               alt=".."
-              style={{ marginTop: "12rem" }}
             />
           </div>
         </div>

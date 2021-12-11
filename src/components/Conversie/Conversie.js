@@ -1,46 +1,64 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Header/Header";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
+import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Conversie = () => {
+  const IMG = styled.img`
+    margin-top: 8rem;
+    margin-left: 2rem;
+    @media (max-width: 980px) {
+      margin-top: 2rem;
+      margin-left: 3rem;
+      margin-bottom: 3rem;
+    }
+  `;
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <>
       <Header />
       <div
         className="container-fluid"
-        style={{ backgroundColor: "#222b38", fontFamily: "san-serif" }}
+        style={{
+          backgroundColor: "#222b38",
+          fontFamily: "san-serif",
+          overflowX: "hidden",
+        }}
       >
         <div className="row">
-          <div className="col-xl-6 text-white">
+          <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-white">
             <div
               className="h1 text-white mx-5"
               style={{
-                fontSize: "3rem",
+                fontSize: "2.3rem",
                 fontWeight: "bold",
                 marginTop: "8rem",
               }}
+              data-aos="fade-up"
             >
-              Haal meer uit nieuwe en <br />
-              bestaande <br />
-              websitebezoekers.
+              Haal meer uit nieuwe en bestaande websitebezoekers.
             </div>
             <div
               className="text-white mx-5"
               style={{ fontSize: "1.1rem", marginTop: "2rem" }}
+              data-aos="fade-up"
             >
               Wil je graag meer bezoekers naar jouw website trekken met
-              conversie
-              <br /> optimalisatie?​
+              conversie optimalisatie?​
             </div>
-            <div className="p-5">
+            <div className="p-5" data-aos="fade-up">
               <Button btnType="MainPageButton">Neem contact op</Button>
             </div>
           </div>
-          <div className="col-xl-6">
-            <img
+          <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <IMG
               src="Placeholder.png"
               className="img-responsive w-75"
-              style={{ marginTop: "7rem", marginLeft: "2rem" }}
+              data-aos="fade-up"
             />
           </div>
         </div>

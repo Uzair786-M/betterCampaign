@@ -7,9 +7,10 @@
   font-family: inherit;
   font-size: 1.2em;
   padding: 10px 25px;
-  /* box-shadow: 2px 2px 2px #966909; */
+  box-shadow: 5px 5px 5px #222b38;
   border-radius: 5px;
   margin-top: 2rem;
+  font-weight: normal;
 }
 
 .MainPageButton:hover,
@@ -17,6 +18,31 @@
   background-color: #222b38;
   border: 1px solid #222b38;
   color: #00fa96;
+}
+
+@media (max-width: 450px) {
+  .MainPageButton {
+    font-size: 1em;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 390px) {
+  .MainPageButton {
+    font-size: 0.7em;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 330px) {
+  .MainPageButton {
+    font-size: 0.6em;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 310px) {
+  .MainPageButton {
+    font-size: 0.5em;
+    margin-top: 0rem;
+  }
 }
 
 .ContactButton {

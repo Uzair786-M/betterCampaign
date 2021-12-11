@@ -1,0 +1,174 @@
+.background {
+  background-color: #222b38;
+
+  position: absolute;
+  color: white;
+}
+
+.fontHeading {
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.fontText1 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.fontText2 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
+.CardContainer {
+  margin-top: 20rem;
+  margin-bottom: 3rem;
+}
+.Card {
+  width: 50%;
+  padding: 5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.Input {
+  width: 100%;
+  border: none;
+}
+
+@media (max-width: 1280px) {
+  .Card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 850px) {
+  .fontHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .fontText1 {
+    font-size: 1.1rem;
+  }
+  .fontText2 {
+    font-size: 1.1rem;
+    margin-bottom: 14rem;
+  }
+
+  .Card {
+    width: 80%;
+    padding: 1rem;
+  }
+  .Input {
+    width: 100%;
+  }
+  .CardContainer {
+    margin-top: 17rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .fontHeading {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .fontText1 {
+    font-size: 0.9rem;
+  }
+  .fontText2 {
+    font-size: 0.9rem;
+  }
+
+  .Card {
+    width: 80%;
+    padding: 1rem;
+  }
+  .Input {
+    width: 100%;
+  }
+  .CardContainer {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .fontHeading {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .fontText1 {
+    font-size: 0.7rem;
+  }
+  .fontText2 {
+    font-size: 0.7rem;
+  }
+  .Card {
+    width: 80%;
+    padding: 1rem;
+  }
+  .Input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .fontHeading {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .fontText1 {
+    font-size: 0.6rem;
+  }
+  .fontText2 {
+    font-size: 0.6rem;
+  }
+  .Card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .Input {
+    width: 100%;
+  }
+  .CardContainer {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .fontHeading {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .fontText1 {
+    font-size: 0.6rem;
+  }
+  .fontText2 {
+    font-size: 0.6rem;
+    margin-bottom: 6rem;
+  }
+  .Card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .Input {
+    width: 100%;
+  }
+  .CardContainer {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
+}

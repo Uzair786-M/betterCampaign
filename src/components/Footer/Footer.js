@@ -1,6 +1,13 @@
 import React from "react";
+import styled from "styled-components";
 
 const Footer = () => {
+  const IMG = styled.img`
+    margin-top: 2rem;
+    @media (max-width: 1000px) {
+      margin-top: 6rem;
+    }
+  `;
   return (
     <>
       <div
@@ -13,7 +20,7 @@ const Footer = () => {
       >
         <div className="row">
           <div
-            className="col-xl-6"
+            className="col-xl-6 col-lg-6 col-md-6 col-sm-12"
             style={{ color: "white", marginTop: "4rem" }}
           >
             <h1>
@@ -39,12 +46,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-xl-6">
-            <img
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <IMG
               src="Placeholder.png"
               className="img-responsive w-100"
               alt=".."
-              style={{ marginTop: "2rem" }}
             />
           </div>
         </div>

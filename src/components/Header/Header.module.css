@@ -1,0 +1,26 @@
+.navBar1 {
+  background-color: #222b38;
+}
+.navBar2 {
+  background-color: white;
+  height: 100vh;
+}
+
+.list1 {
+  color: white !important;
+  font-size: 1.1rem;
+  margin: 0.8rem;
+}
+
+.list2 {
+  color: #00fa96 !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.list1:hover {
+  color: #00fa96 !important;
+}

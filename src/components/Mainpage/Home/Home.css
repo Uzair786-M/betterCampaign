@@ -1,0 +1,101 @@
+.headingStyle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 7rem;
+  margin-left: 4rem;
+  color: white;
+}
+
+.textStyle {
+  font-size: 1.1rem;
+
+  margin-top: 2rem;
+  margin-left: 4rem;
+  color: white;
+}
+
+.image {
+  margin-top: 9rem;
+}
+
+@media (max-width: 1280px) {
+  .headingStyle {
+    font-size: 2rem;
+  }
+  .textStyle {
+    font-size: 0.8rem;
+  }
+  .image {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .headingStyle {
+    font-size: 3rem;
+  }
+  .image {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .headingStyle {
+    font-size: 2rem;
+  }
+  .image {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .headingStyle {
+    font-size: 2rem;
+  }
+  .image {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .headingStyle {
+    font-size: 2rem;
+  }
+  .textStyle {
+    font-size: 0.7rem;
+  }
+  .image {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .headingStyle {
+    font-size: 1.5rem;
+  }
+  .textStyle {
+    font-size: 0.6rem;
+  }
+  .image {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .headingStyle {
+    font-size: 1.2rem;
+  }
+  .textStyle {
+    font-size: 0.8rem;
+  }
+  .image {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
